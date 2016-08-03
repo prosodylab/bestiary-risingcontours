@@ -5,7 +5,7 @@ if (Sys.getenv('HOSTNAME') == 'u15342564.onlinehome-server.com'){
 } else {
   basepath = 'D:/Data'
 }
-
+basepath = '/home/mmcauliffe/data'
 averageAll = read.csv(paste(basepath, "bestiary/averageAll.txt", sep = '/'),sep = "\t")
 averageAll= subset(averageAll, !is.na(smoothedPitch))
 ui <- fluidPage(

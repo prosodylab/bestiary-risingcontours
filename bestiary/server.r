@@ -10,7 +10,7 @@ if (Sys.getenv('HOSTNAME') == 'u15342564.onlinehome-server.com'){
 } else {
   basepath = 'D:/Data'
 }
-
+basepath = '/home/mmcauliffe/data'
 addResourcePath("audio", paste(basepath, "bestiary/audio", sep = '/'))
 
 gg_color_hue <- function(n) {
