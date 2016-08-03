@@ -1,5 +1,12 @@
 
-averageAll = read.csv("C:/Users/michael/Dropbox/cont/bestiary/rmarkdown_mw/averageAll.txt",sep = "\t")
+basepath = ''
+if (Sys.getenv('HOSTNAME') == 'u15342564.onlinehome-server.com'){
+  basepath = '/home/mmcauliffe/data'
+} else {
+  basepath = 'D:/Data'
+}
+
+averageAll = read.csv(paste(basepath, "bestiary/averageAll.txt", sep = '/'),sep = "\t")
 averageAll= subset(averageAll, !is.na(smoothedPitch))
 ui <- fluidPage(
   sidebarLayout(sidebarPanel(
