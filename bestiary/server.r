@@ -30,7 +30,7 @@ server <- function(input, output) {
   selectedGenders <- eventReactive(input$genderToggle,{input$genderToggle})
   
   output$plot1 <- renderPlot({
-    ggplot(subset(averageAll, (Contour %in% selectedContours()) & (Gender %in%  selectedGenders())), aes(x=sliceTimeAv, y=smoothedPitch, group=recordedFile, colour=Contour)) + theme_bw(base_size = 8) + geom_line(show_guide=F) + geom_smooth(aes(x=sliceTimeAv, y=smoothedPitch,group=1), colour="black",size=0.7, data = averageAll) + xlab("") + ylab("Pitch (Hz)") + facet_grid(.~Context) + scale_colour_manual(values=rev(gg_color_hue(8))) + ggtitle("Smoothed pitch track of utterances by context in which they were recorded")
+    ggplot(subset(averageAll, (Contour %in% selectedContours()) & (Gender %in%  selectedGenders())), aes(x=sliceTimeAv, y=smoothedPitch, group=recordedFile, colour=Contour)) + theme_bw(base_size = 8) + geom_line(show_guide=F) + geom_smooth(aes(x=sliceTimeAv, y=smoothedPitch,group=1), colour="black",size=0.7, data = subset(averageAll, (Contour %in% selectedContours()) & (Gender %in%  selectedGenders()))) + xlab("") + ylab("Pitch (Hz)") + facet_grid(.~Context) + scale_colour_manual(values=rev(gg_color_hue(8))) + ggtitle("Smoothed pitch track of utterances by context in which they were recorded")
     
     # Michael M. changed method for average curve to 'gam', but smooth seems more desirable?:
     # + geom_smooth(aes(x=sliceTimeAv, y=smoothedPitch,group=1), colour="black",size=0.7, data = averageAll,method='gam')
