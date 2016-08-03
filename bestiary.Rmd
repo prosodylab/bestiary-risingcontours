@@ -61,7 +61,7 @@ In this particular experiment, there were three types of dialogues, which each t
 
 
 
-```{r, echo=FALSE}
+```{r}
 shinyAppDir(
   "bestiary",
   options=list(
