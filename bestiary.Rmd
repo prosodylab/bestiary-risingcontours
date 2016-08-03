@@ -1,0 +1,72 @@
+---
+title: "Intonational Bestiary"
+output: html_document
+runtime: shiny
+---
+
+\
+\
+*Goodhue, D., Harrison, L., Su, Y. T. C., and Wagner, M. (2015). [Toward a bestiary of English intonational tunes.](http://prosodylab.org/research/bestiary/) In Poster presented at the 46th Conference of the North Eastern Linguistic Society, Concordia University.*
+
+## Our Goal
+
+Our goal is to test which intonational contours speakers use to convey certain intentions, when they are not aware that the choice of contour is what the experiment is about.  
+
+In this particular experiment, there were three types of dialogues, which each tried to elicit a certain type of response, either a contradiction, an incomplete response, or an incredulous response.
+
+\
+
+
+### Intended Contradiction:
+
+**Emma:** So yesterday Sarah asked me if I was going to John's Birthday party and I said no, I don't even like him.
+
+*[Stage directions: Your friend Emma spent the whole day with John yesterday and you know for a fact that she likes him. So you're very surprised by what Emma says, and your answer should reflect that.]*
+
+**Participant's Response**: You like John
+
+\
+
+
+### Intended Incomplete Answer:
+
+
+**Emma:** I don't feel like going to this party tonight, I have the feeling I might not like any of the people there
+
+*[Stage directions: You know your friend John is attending the party, and you know Emma knows and likes him, but you're not sure whether she'll like anyone else, and your answer should reflect that.]*
+
+**Participant's Response**: You like John
+
+\
+
+
+### Intended Incredulous Response:
+
+
+**Emma:**  Yesterday Sarah kept saying mean things about John and I was really uncomfortable because John's a nice guy, I really like him. 
+
+*[Stage directions: Just the other day your friend Emma was bad talking John, so you know for a fact that she doesn't like him. So you're very surprised by what Emma says, and your answer should reflect that.]*
+
+**Participant's Response**: You like John
+
+
+\
+\
+\
+
+
+## Results:
+
+\
+
+
+
+```{r, echo=FALSE}
+shinyAppDir(
+  "bestiary",
+  options=list(
+    width="100%", height=700
+  )
+)
+
+```
