@@ -48,22 +48,35 @@ In this particular experiment, there were three types of dialogues, which each t
 *[Stage directions: Just the other day your friend Emma was bad talking John, so you know for a fact that she doesn't like him. So you're very surprised by what Emma says, and your answer should reflect that.]*
 
 **Participant's Response**: You like John
-
-
-\
-\
 \
 
 
-## Results:
+## Results: The contours speakers used by context 
+
+(Note that these plots are based on one annotator's decisions, and as you'll see, some of them are annotation errors...)  
 
 \
-
 
 
 ```{r, echo=FALSE}
 shinyAppDir(
-  "bestiary",
+  "proportions",
+  options=list(
+    width="100%", height=700
+  )
+)
+
+```
+
+
+## The utterances with the perceptual norming:
+
+(Note that these plots are based on one annotator's decisions, and as you'll see, some of them are annotation errors...) 
+
+
+```{r, echo=FALSE}
+shinyAppDir(
+  "utterances",
   options=list(
     width="100%", height=700
   )
