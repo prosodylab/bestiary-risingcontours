@@ -62,7 +62,7 @@ In this particular experiment, there were three types of dialogues, which each t
 shinyAppDir(
   "proportions",
   options=list(
-    width="100%", height=700
+    width="100%", height=350
   )
 )
 

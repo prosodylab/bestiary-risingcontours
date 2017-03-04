@@ -7,8 +7,6 @@ library(RColorBrewer)
 basepath = ''
 if (Sys.getenv('HOSTNAME') == 'u15342564.onlinehome-server.com'){
   basepath = '/home/mmcauliffe/data'
-} else if (Sys.getenv('HOSTNAME') == '') {
-  basepath = '~/work_git/bestiary'
 } else {
   basepath = 'D:/Data'
 }

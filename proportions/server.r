@@ -5,12 +5,10 @@ library(car)
 library(RColorBrewer)
 
 basepath = ''
-if (Sys.getenv('HOSTNAME') == 'u15342564.onlinehome-server.com'){
-  basepath = '/home/mmcauliffe/data'
-} else if (Sys.getenv('HOSTNAME') == '') {
-  basepath = '~/work_git/bestiary'
+if (Sys.getenv('HOSTNAME') == 'prosodylab'){
+  basepath = '/home/linguistics/prosodylab/data/bestiary'
 } else {
-  basepath = 'D:/Data'
+  basepath = 'D:/Data/bestiary'
 }
 
 addResourcePath("audio", paste(basepath, "/audio", sep = '/'))
