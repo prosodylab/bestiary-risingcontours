@@ -5,7 +5,7 @@ library(car)
 library(RColorBrewer)
 
 basepath = ''
-if (Sys.getenv('HOSTNAME') == 'prosodylab'){
+if (Sys.info()["nodename"] == 'prosodylab'){
   basepath = '/home/linguistics/prosodylab/data/bestiary'
 } else {
   basepath = 'D:/Data/bestiary'
