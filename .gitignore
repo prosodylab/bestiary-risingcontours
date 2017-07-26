@@ -36,3 +36,4 @@ vignettes/*.pdf
 # specific to this folder:
 audio/
 *.txt
+!dummy.txt

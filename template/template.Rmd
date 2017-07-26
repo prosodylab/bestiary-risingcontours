@@ -1,0 +1,20 @@
+---
+title: "Template"
+runtime: shiny
+output: html_document
+---
+
+This is just a dummy Rmarkdown template to show how to use Shiny apps to explore experimental data like the Bestiary page.
+
+```{r, echo=FALSE}
+shinyAppDir(
+  "app",
+  options=list(
+    width="100%", height=350
+  )
+)
+
+```
+
+
+
