@@ -15,6 +15,11 @@ interactable plots for exploring and displaying data consists of several steps:
 Create finalized data file
 --------------------------
 
+The idea here is to offload all of the preprocessing and massaging of the data from the actual running of the server.
+The data set up for each app should just load data without the normal recoding/reshaping/na removal/etc.
+This finalized data file should then be saved in a folder
+sister to your apps (within the directory that the RMarkdown file lives), so that the site is more
+portable.
 
 Create ui.R
 -----------
@@ -32,15 +37,13 @@ The `selected` keyword argument sets the initial subset.
 
 In the `mainpanel`, a `plotOutput` is defined that sets the area for one of the plots defined in `server.R`.
 A descriptive name should be given to it, and unique identifiers for `click` if you're defining any
-behavior based on clicks.
+behavior based on clicks.  There can be multiple `plotOutput` sections defined in an app.
 
 Create server.R
 ---------------
 
 In the data set up section, load your finalized data file along with any required packages
-(should just be `ggplot2`, for the most part).  I suggest having all data in a folder
-sister to your apps (within the directory that the RMarkdown file lives), so that the site is more
-portable.
+(should just be `ggplot2`, for the most part).
 
 Once the data is loaded, define the behavior of the `shinyServer`.  For subsetting data, there are two key parts.
 The first is an `eventReactive` that gets triggered when the UI element for the subset is changed and returns the list of currently
@@ -51,4 +54,5 @@ as part of your analysis.
 Create RMarkdown
 ----------------
 
-To include the
+To include the plot(s) in the RMarkdown page, include the `shinyAppDir` function like in `template.Rmd`, changing "app" to whatever your app is called.
+Normal RMarkdown and text would surround it.
