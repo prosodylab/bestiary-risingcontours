@@ -57,26 +57,52 @@ Create RMarkdown
 To include the plot(s) in the RMarkdown page, include the `shinyAppDir` function like in `template.Rmd`, changing "app" to whatever your app is called.
 Normal RMarkdown and text would surround it.
 
-Create html wrapper
--------------------
-
-Copy the template/template.html file and rename it to what your app's name and change two things.  First, change the title tag to reflect the new dataset.
-Second, change the iframe src from '/apps/template' to '/apps/app_name'.
-
 Upload to server
 ----------------
 
+
 Upload your data somewhere on the server somehow (rsync, dropbox, scp, etc.).
+There's a directory in the prosodylab home folder named data that would be good
+(i.e., `~/data/app_name`)
+
+First, ssh into the server via:
 
 ```
 ssh chael@prosodylab.org
 ssh prosodylab@prosodylab.cs.mcgill.ca
+```
+
+Then change to the directory for the bestiary git repo:
+
+```
 cd dev/bestiary
+```
+
+Get the latest version from GitHub:
+
+```
 git pull
+```
+
+Then we'll want to make sure that the data uploaded earlier is available to the
+app:
+
+```
 cd new_app
 ln -s /path/to/data/on/server data
-cd /srv/shiny-server/apps
-ln -s ~/dev/bestiary/your_app your_app
+```
+
+In the case of the example path above, the command would be:
+
+```
+ln -s ~/data/app_name data
+```
+
+Finally, restart the shiny server to see the changes:
+
+```
 sudo service shiny-server restart
 ```
+
+It should now be available at http://prosodylab.org/data/bestiary/app_name.
 
