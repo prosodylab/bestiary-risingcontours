@@ -56,3 +56,27 @@ Create RMarkdown
 
 To include the plot(s) in the RMarkdown page, include the `shinyAppDir` function like in `template.Rmd`, changing "app" to whatever your app is called.
 Normal RMarkdown and text would surround it.
+
+Create html wrapper
+-------------------
+
+Copy the template/template.html file and rename it to what your app's name and change two things.  First, change the title tag to reflect the new dataset.
+Second, change the iframe src from '/apps/template' to '/apps/app_name'.
+
+Upload to server
+----------------
+
+Upload your data somewhere on the server somehow (rsync, dropbox, scp, etc.).
+
+```
+ssh chael@prosodylab.org
+ssh prosodylab@prosodylab.cs.mcgill.ca
+cd dev/bestiary
+git pull
+cd new_app
+ln -s /path/to/data/on/server data
+cd /srv/shiny-server/apps
+ln -s ~/dev/bestiary/your_app your_app
+sudo service shiny-server restart
+```
+
