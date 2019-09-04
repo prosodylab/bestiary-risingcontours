@@ -1,85 +1,400 @@
 ---
-title: "Intonational Bestiary"
-output: html_document
+title: "Toward an intonational bestiary"
+output:
+  html_document:
+    collapsed: yes
+    theme: united
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
 runtime: shiny
 ---
 
 \
 \
-*Goodhue, D., Harrison, L., Su, Y. T. C., and Wagner, M. (2015). [Toward a bestiary of English intonational tunes.](http://prosodylab.org/research/bestiary/) In Poster presented at the 46th Conference of the North Eastern Linguistic Society, Concordia University.*
-
-## Our Goal
-
-Our goal is to test which intonational contours speakers use to convey certain intentions, when they are not aware that the choice of contour is what the experiment is about.  
-
-In this particular experiment, there were three types of dialogues, which each tried to elicit a certain type of response, either a contradiction, an incomplete response, or an incredulous response.
-
-\
 
 
-### Intended Contradiction:
+## The project
 
-**Emma:** So yesterday Sarah asked me if I was going to John's Birthday party and I said no, I don't even like him.
+This page provides a first glimpse of our current project, which aims at creating an 'intonational bestiary'. By this we mean respository of mini-corpora which help establish the inventory of intonational tunes of North American English (and, in the long run, hopefully of some other languages) 
 
-*[Stage directions: Your friend Emma spent the whole day with John yesterday and you know for a fact that she likes him. So you're very surprised by what Emma says, and your answer should reflect that.]*
+Below, you can browse the data from a scripted production experiment and listen to the individual utterances. We hope this will be useful for training people to recognize certain tunes. Of course, you might very well disagrree with our classification--if so, let us know!  If you would like to get access to the data and maybe even provide your own annotation, contact us!
 
-**Participant's Response**: You like John
+The approach we took in the data set posted on this page is to collect data in scripted dialogues that are relatively controlled with respect to the intentions of the characters involved, and to see which intonational tunes speakers (who are not aware that the experiment is about intonation) actually use to convey these intentions.
 
-\
+Are tunes like sentences with meaningful phonological pieces that compose an overall meaning? Or are they like mono-morphemic words, whose phonological components are not themselves meaningful? This is one of the questions we hope to make progress on by collecting this type of data set. For now, the utterances are annotated only for which tune was used. We decided to treat tunes as holistic contours, rather than treating them as decomposable into smaller meaningful units, since this scheme lead to high inter-annotator agreement. This is not meant to imply the tunes cannot be decomposed into meaningful parts.  
 
+The utterances were also normed in perception experiments by naive listeners who rate their naturalness in different contexts. These mini-corpora can then become a point of reference for future studies. They can also be a testing ground for different types of analyses of intonational tunes.
 
-### Intended Incomplete Answer:
+The experiment reported on this page aimed at establishing which intonational contours speakers speakers use to convey three particular intentions, given a context and a scripted response. Speakers were not told that it is the choice of intonation that we were interested in. 
 
+A first write-up of the study with more details was published here: 
 
-**Emma:** I don't feel like going to this party tonight, I have the feeling I might not like any of the people there
-
-*[Stage directions: You know your friend John is attending the party, and you know Emma knows and likes him, but you're not sure whether she'll like anyone else, and your answer should reflect that.]*
-
-**Participant's Response**: You like John
-
-\
+*Goodhue, D., Harrison, L., Su, Y. T. C., and Wagner, M. (2016). [Toward a bestiary of English intonational tunes](http://prosodylab.org/~chael/papers/Goodhue-et-al_NELS_2016.pdf). In Hammerly, C. and Prickett, B., editors, Proceedings of the 46th Conference of the North Eastern Linguistic Society (NELS), Concordia University, pages 311–320*
 
 
-### Intended Incredulous Response:
+The three types of dialogues each tried to elicit a certain type of response, either a contradiction, an indirect implication, or an incredulous response. The limitations of this study are numerous, for one thing the dialogues were scripted, so speakers could not choose their own words. We think the results are nevertheless interesting... 
+
+Thanks to the many people who helped with this experiment, especially our participants how gave us permission to publish these recordings! Also thanks to SSHRC and NSERC for providing funding for this research! 
+
+\ 
+\ 
 
 
-**Emma:**  Yesterday Sarah kept saying mean things about John and I was really uncomfortable because John's a nice guy, I really like him. 
+## Three types of intent
 
-*[Stage directions: Just the other day your friend Emma was bad talking John, so you know for a fact that she doesn't like him. So you're very surprised by what Emma says, and your answer should reflect that.]*
-
-**Participant's Response**: You like John
-\
+There were 9 item sets each consisting of three dialogues with identical target sentences, which varied in the prerecorded context and the stage directions provided to the participant. 
 
 
-## Results: The contours speakers used by context 
+#### Intended Contradiction:
 
-(Note that these plots are based on one annotator's decisions, and as you'll see, some of them are annotation errors...)  
+**Emma:** Jim was just asking me if I've seen Manuel, and I told him I don't know any Manuel.
+
+*[Stage directions: You know for a fact that your friend knows Manuel because you are all in the same biology class together. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You know Manuel
 
 \
 
 
-```{r, echo=FALSE}
-shinyAppDir(
-  "proportions",
-  options=list(
-    width="100%", height=350
-  )
-)
-
-```
+#### Intended Implication:
 
 
-## The utterances with the perceptual norming:
+**Emma:** The concert tonight is all sold out and I didn't get a ticket yet! I wish I knew someone who worked there who could get me in.
 
-(Note that these plots are based on one annotator's decisions, and as you'll see, some of them are annotation errors...) 
+*[Stage directions: You know that your friend is friends with Manuel, who just got a job at the concert venue a couple of weeks ago, and you want to suggest that he could help, even if you don't know for sure whether he could.]*
+
+**Participant's Response**: You know Manuel
+
+\
+
+
+#### Intended Incredulity:
+
+
+**Emma:**  I just talked to Manuel, we're going to meet up later. 
+
+*[Stage directions: You told your friend earlier today that you need to get in touch with Manuel, but you didn't know how to contact him. At the time she just shrugged and didn't offer any help, so you assumed she didn't know him. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You know Manuel
+
+
+\
+\
+
+
+## The data
+
+\ 
+\
 
 
 ```{r, echo=FALSE}
 shinyAppDir(
   "utterances",
   options=list(
-    width="100%", height=700
+    width="100%", height=1300
   )
 )
 
 ```
+
+
+\
+\
+\
+
+
+## List of Item Sets
+
+\
+
+
+#### Item 1
+
+**(a) Intended Implication**
+
+**Emma:** So yesterday Sarah asked me if I was going to John's Birthday party and I said no, I don't even like him.
+
+*[Stage directions: Your friend spent the whole day with John yesterday and you know for a fact that she likes him. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You like John
+
+**(b) Intended Incredulity**
+
+**Emma:** Yesterday Sarah kept saying mean things about John and I was really uncomfortable because John's a nice guy, I really like him.
+
+*[Stage directions: Just the other day your friend was bad-talking John, so you know for a fact that she doesn't like him. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You like John
+
+**(c) Intended Implication**
+
+**Emma:** I don't feel like going to this party tonight, I have the feeling I might not like any of the people there.
+
+*[Stage directions: You know your friend John is attending the party, and you're sure the
+person you're talking with knows and likes him, but you're not sure whether she'll like anyone else, and your answer should reflect that.]*
+
+**Participant's Response**: You like John
+\
+\
+\
+
+
+#### Item 2
+
+**(a) Intended Implication**
+
+**Emma:** Yesterday I got home and my Mom had made me tea. Ick.
+I never drink tea.
+
+*[Stage directions: Yesterday at Starbucks your friend ordered tea and you know for a fact that she drinks tea. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You drink tea
+
+
+**(b) Intended Incredulity**
+
+**Emma:** Oh wow, I went to second cup yesterday and ordered the best tea.
+
+*[Stage directions: Yesterday at Starbucks you recommended a tea to your friend to which she responded, Ew, I don't drink tea!" So you know for a fact that she doesn't drink tea. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You drink tea
+
+
+**(c) Intended Implication**
+
+**Emma:** I don't like going to this place because there is nothing I drink that I can order there.
+
+*[Stage directions: You know your friend likes tea, and they serve tea in this place, so you want to suggest that that's something she could order, but you're not sure whether there is anything else that she could drink.]*
+
+**Participant's Response**: You drink tea
+\
+\
+\
+
+
+#### Item 3
+
+**(a) Intended Implication**
+
+**Emma:** I saw a stray cat the other day. Cats are such filthy creatures, I don't like them.
+
+*[Stage directions: Your friend mentioned the other day that she wanted to buy a cat because she likes them. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You like cats
+
+
+**(b) Intended Incredulity**
+
+**Emma:** Dylan just got a new kitten! I can't wait to go see it, I like cats.
+
+*[Stage directions: Your friend hates coming to your house because you own a cat. You know for a fact that she dislikes cats. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You like cats
+
+
+**(c) Intended Implication**
+
+
+**Emma:** She asked what my favorite animal is, but I'm not really sure, I'm just not an animal person.
+
+*[Stage directions: Your friend always cuddles with your cat when she comes over. So you think she likes cats, but you're not sure whether there any other animals that she might like.]*
+
+**Participant's Response**: You like cats
+\
+\
+\
+
+
+#### Item 4
+
+**(a) Intended Implication**
+
+**Emma:** I don't like poutine because there's cheese on it! I don't eat cheese.
+
+*[Stage directions: You always orders pizza when you two hang out. You know for a fact that your friend eats cheese. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You eat cheese
+
+
+**(b) Intended Incredulity**
+
+**Emma:** Ooh, the triple cheese omelette looks good. I like cheese.
+
+*[Stage directions: Your friend always picks the cheese other pizza, so you know she doesn't eat cheese. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You eat cheese
+
+
+**(c) Intended Implication**
+
+**Emma:** We're going to a Swiss restaurant, and I'm worried that there won't be much that I'd actually want to eat.
+
+*[Stage directions: You know for a fact your friend loves cheese, and many of the dishes involve Swiss cheese, for example fondue. You want to suggest that at least she's going to be able to eat that, even if you're not sure whether there'll be many other things she'll like.]*
+
+**Participant's Response**: You eat cheese
+\
+\
+\
+
+
+#### Item 5
+
+**(a) Intended Implication**
+
+**Emma:** Today my mom told me I'm addicted to shopping, so I told her I didn't go shopping at all yesterday.
+
+*[Stage directions: You know for a fact that your friend went shopping yesterday because you were with her when she went to the mall. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You went shopping
+
+
+**(b) Intended Incredulity**
+
+**Emma:** Sorry I'm late, it took forever to get through check out at the store. Everyone is out shopping.
+
+*[Stage directions: Earlier today you made your friend promise not to go shopping without you because there is something you need to buy and you wanted to go with her. She promised she wouldn't, so you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You went shopping
+
+
+**(c) Intended Implication**
+
+**Emma:** This day has turned out to be so lame, I just wanted to have fun, but I didn't get to do a single thing I liked.
+
+*[Stage directions: It's true that your friend hasn't had a very good day, but she did get to go shopping and you know she really enjoys doing that even if you're not sure whether she got to do anything else she liked.]*
+
+**Participant's Response**: You went shopping
+\
+\
+\
+
+
+#### Item 6
+
+**(a) Intended Implication**
+
+**Emma:** Mark was just asking me to repay him for the ticket, but I told him I don't have any money right now.
+
+*[Stage directions: You know for a fact that your friend has some money because you just gave her ten dollars half an hour ago. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You have money
+
+
+**(b) Intended Incredulity**
+
+**Emma:** Let's take a cab home, I'll pay for it.
+
+*[Stage directions: You and your friend are out for a night on the town, and she got you to pay for her drinks all night because she claimed she didn't have any money. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You have money
+
+
+**(c) Intended Implication**
+
+**Emma:** I don't really know why this foundation keeps asking me for donations, they should know that I don't respond well to soliciting.
+
+*[Stage directions: It's true that your friend has never responded to one of their letters, but it's a well known fact that she is very rich, and you want to suggest that this might be why they keep trying, even if you're not sure whether they might have other reasons.]*
+
+**Participant's Response**: You have money
+\
+\
+\
+
+
+#### Item 7
+
+**(a) Intended Implication**
+
+**Emma:** Jim was just asking me if I've seen Manuel, and I told him I don't know any Manuel. 
+
+*[Stage directions: You know for a fact that your friend knows Manuel because you are all in the same biology class together. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You know Manuel
+
+
+**(b) Intended Incredulity**
+
+**Emma:** I just talked to Manuel, we're going to meet up later.
+
+*[Stage directions: You told your friend earlier today that you need to get in touch with Manuel, but you didn't know how to contact him. At the time she just shrugged and didn't other any help, so you assumed she didn't know him. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You know Manuel
+
+
+**(c) Intended Implication**
+
+**Emma:** The concert tonight is all sold out and I didn't get a ticket yet! I wish I knew someone who worked there who could get me in.
+
+*[Stage directions: You know that your friend is friends with Manuel, who just got a job at the concert venue a couple of weeks ago, and you want to suggest that he could help, even if you don't know for sure whether he could.]*
+
+**Participant's Response**: You know Manuel
+\
+\
+\
+
+
+#### Item 8
+
+**(a) Intended Implication**
+
+**Emma:** Matt asked me out for a dance, but I told him that I can't dance and that it would just be awkward.
+
+*[Stage directions: You know your friend is actually a pretty good dancer even if she hasn't had formal training, so you're very surprised to hear what she says and your answer should reflect that.]*
+
+**Participant's Response**: You can dance
+
+**(b) Intended Incredulity**
+
+**Emma:** Matt asked me out for a dance, and I said awesome, now
+I just need to get a dress for the occasion.
+
+*[Stage directions: You know your friend really dislikes dancing and can't dance, or at least that's what she always said. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You can dance
+
+
+**(c) Intended Implication**
+
+*[Stage directions: You know that Matt enjoys dancing and your friend is a good dancer, so you want to suggest that he might have asked her out for that reason, without being sure whether he has any other motives.]*
+
+**Emma:** Matt asked me out for a dance, and I wonder why he did, I thought he liked Jennifer.
+
+**Participant's Response**: You can dance
+\
+\
+\
+
+
+#### Item 9
+
+**(a) Intended Implication**
+
+**Emma:** I can't join you today because you're going by bike, and I don't have one, so I'll just stay home.
+
+*[Stage directions: You're surprised to hear this given that your friend has a bike in the basement of the dorm, or at least she did. So you're very surprised by what she says, and your answer should reflect that.]*
+
+**Participant's Response**: You have a bike
+
+
+**(b) Intended Incredulity**
+
+**Emma:** Hey, do you want to come for a bike ride down to the old town?
+
+*[Stage directions: You're surprised to hear that your friend wants to go on a bike ride, because usually she is allergic to any form of exercise. In fact, you're very surprised she even has a bike, and your answer should reflect that.]*
+
+**Participant's Response**: You have a bike
+
+
+**(c) Intended Implication**
+
+**Emma:** I can't join you because it starts after the metro stops running, and I have no way of getting there.
+
+*[Stage directions: You know that your friend has a bike, and that she's just being lazy, so you want to suggest that she could in fact get there by bike, though you're not sure if there might be other options.]*
+
+**Participant's Response**: You have a bike
+
+
+
+
