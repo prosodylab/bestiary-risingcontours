@@ -1,0 +1,106 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1.01 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 1.01 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.02 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.02 
+            xmax = 0.18 
+            text = "Y" 
+        intervals [3]:
+            xmin = 0.18 
+            xmax = 0.24 
+            text = "UW1" 
+        intervals [4]:
+            xmin = 0.24 
+            xmax = 0.32 
+            text = "L" 
+        intervals [5]:
+            xmin = 0.32 
+            xmax = 0.44 
+            text = "AY1" 
+        intervals [6]:
+            xmin = 0.44 
+            xmax = 0.54 
+            text = "K" 
+        intervals [7]:
+            xmin = 0.54 
+            xmax = 0.67 
+            text = "JH" 
+        intervals [8]:
+            xmin = 0.67 
+            xmax = 0.96 
+            text = "AA1" 
+        intervals [9]:
+            xmin = 0.96 
+            xmax = 0.99 
+            text = "N" 
+        intervals [10]:
+            xmin = 0.99 
+            xmax = 1.01 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 1.01 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.02 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.02 
+            xmax = 0.24 
+            text = "YOU" 
+        intervals [3]:
+            xmin = 0.24 
+            xmax = 0.54 
+            text = "LIKE" 
+        intervals [4]:
+            xmin = 0.54 
+            xmax = 0.99 
+            text = "JOHN" 
+        intervals [5]:
+            xmin = 0.99 
+            xmax = 1.01 
+            text = "sil" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "woi" 
+        xmin = 0 
+        xmax = 1.01 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.02 
+            text = "" 
+        intervals [2]:
+            xmin = 0.02 
+            xmax = 0.24 
+            text = "1 " 
+        intervals [3]:
+            xmin = 0.24 
+            xmax = 0.54 
+            text = "2 " 
+        intervals [4]:
+            xmin = 0.54 
+            xmax = 0.99 
+            text = "3" 
+        intervals [5]:
+            xmin = 0.99 
+            xmax = 1.01 
+            text = "" 

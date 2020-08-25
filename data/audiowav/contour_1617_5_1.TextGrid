@@ -1,0 +1,118 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 0.88 
+tiers? <exists> 
+size = 3 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phones" 
+        xmin = 0 
+        xmax = 0.88 
+        intervals: size = 13 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.02 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.02 
+            xmax = 0.11 
+            text = "Y" 
+        intervals [3]:
+            xmin = 0.11 
+            xmax = 0.26 
+            text = "UW1" 
+        intervals [4]:
+            xmin = 0.26 
+            xmax = 0.29 
+            text = "W" 
+        intervals [5]:
+            xmin = 0.29 
+            xmax = 0.32 
+            text = "EH1" 
+        intervals [6]:
+            xmin = 0.32 
+            xmax = 0.35 
+            text = "N" 
+        intervals [7]:
+            xmin = 0.35 
+            xmax = 0.39 
+            text = "T" 
+        intervals [8]:
+            xmin = 0.39 
+            xmax = 0.45 
+            text = "SH" 
+        intervals [9]:
+            xmin = 0.45 
+            xmax = 0.57 
+            text = "AA1" 
+        intervals [10]:
+            xmin = 0.57 
+            xmax = 0.65 
+            text = "P" 
+        intervals [11]:
+            xmin = 0.65 
+            xmax = 0.73 
+            text = "IH0" 
+        intervals [12]:
+            xmin = 0.73 
+            xmax = 0.86 
+            text = "NG" 
+        intervals [13]:
+            xmin = 0.86 
+            xmax = 0.88 
+            text = "sil" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "words" 
+        xmin = 0 
+        xmax = 0.88 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.02 
+            text = "sil" 
+        intervals [2]:
+            xmin = 0.02 
+            xmax = 0.26 
+            text = "YOU" 
+        intervals [3]:
+            xmin = 0.26 
+            xmax = 0.39 
+            text = "WENT" 
+        intervals [4]:
+            xmin = 0.39 
+            xmax = 0.86 
+            text = "SHOPPING" 
+        intervals [5]:
+            xmin = 0.86 
+            xmax = 0.88 
+            text = "sil" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "woi" 
+        xmin = 0 
+        xmax = 0.88 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.02 
+            text = "" 
+        intervals [2]:
+            xmin = 0.02 
+            xmax = 0.26 
+            text = "1 " 
+        intervals [3]:
+            xmin = 0.26 
+            xmax = 0.39 
+            text = "2 " 
+        intervals [4]:
+            xmin = 0.39 
+            xmax = 0.86 
+            text = "3" 
+        intervals [5]:
+            xmin = 0.86 
+            xmax = 0.88 
+            text = "" 
