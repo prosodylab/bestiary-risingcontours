@@ -35,3 +35,9 @@ vignettes/*.pdf
 
 # specific to this folder:
 !dummy.txt
+
+# .DS_Store in all directories
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
