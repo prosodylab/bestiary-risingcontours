@@ -46,44 +46,85 @@ Thanks to the many people who helped with this experiment, especially our partic
 There were 9 item sets each consisting of three dialogues with identical target sentences, which varied in the prerecorded context and the stage directions provided to the participant. 
 
 
-#### Intended Contradiction:
+## Our experiment
 
-**Emma:** Jim was just asking me if I've seen Manuel, and I told him I don't know any Manuel.
+
+* Scripted dialogues 
+* Participants are asked to act out three particular intentions
+* We 'implant' these intentions by providing stage directions, in addition to a script
+* We want to to see which tunes speakers choose (they are not told that the experiment is about intonation)
+* The recordings are annotated by trained annotators
+* And also subjected to perception experiments
+
+
+
+### Context 1: Intended Contradiction
+
+
+**Emma:** Jim was just asking me if I've seen Manuel, and I told him I don't know any Manuel. 
+
+<audio controls="controls" src="data/audio/contRecord_1_7_3.mp3">
+</audio>
 
 *[Stage directions: You know for a fact that your friend knows Manuel because you are all in the same biology class together. So you're very surprised by what she says, and your answer should reflect that.]*
 
 **Participant's Response**: You know Manuel
 
-\
+<audio controls="controls" src="data/audio/contour_1323_7_1.mp3">
+</audio>
 
 
-#### Intended Implication:
+### Context 2: Intended Implication
 
 
 **Emma:** The concert tonight is all sold out and I didn't get a ticket yet! I wish I knew someone who worked there who could get me in.
+
+<audio controls="controls" src="data/audio/contRecord_3_7_3.mp3">
+</audio>
 
 *[Stage directions: You know that your friend is friends with Manuel, who just got a job at the concert venue a couple of weeks ago, and you want to suggest that he could help, even if you don't know for sure whether he could.]*
 
 **Participant's Response**: You know Manuel
 
-\
+<audio controls="controls" src="data/audio/contour_1617_7_3.mp3">
+</audio>
 
 
-#### Intended Incredulity:
+### Context 3: Intended Incredulity
 
 
 **Emma:**  I just talked to Manuel, we're going to meet up later. 
+
+<audio controls="controls" src="data/audio/contRecord_2_7_3.mp3">
+</audio>
 
 *[Stage directions: You told your friend earlier today that you need to get in touch with Manuel, but you didn't know how to contact him. At the time she just shrugged and didn't offer any help, so you assumed she didn't know him. So you're very surprised by what she says, and your answer should reflect that.]*
 
 **Participant's Response**: You know Manuel
 
+Incredulity contour (we almost never found these though!):
+<audio controls="controls" src="data/audio/contour_1094_7_3.mp3">
+</audio>
 
-\
-\
+
+\ 
 
 
-## The data
+## Which tunes did speakers actually use?
+
+
+```{r, echo=FALSE}
+shinyAppDir(
+  "proportions",
+  options=list(
+    width="100%", height=1300
+  )
+)
+
+```
+
+## Plotting the contours, with perceptual norming data
+
 
 \ 
 \
@@ -91,7 +132,7 @@ There were 9 item sets each consisting of three dialogues with identical target 
 
 ```{r, echo=FALSE}
 shinyAppDir(
-  "utterances",
+  "contours",
   options=list(
     width="100%", height=1300
   )
@@ -102,7 +143,7 @@ shinyAppDir(
 
 \
 \
-\
+
 
 
 ## List of Item Sets

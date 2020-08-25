@@ -52,21 +52,27 @@ participants = c(
 
 ui <- fluidPage(
   
-  h4("Proportions of contours used in each context:"),
+  h4("Naturalness ratings of each utterance in all three contexts:"),
   
-  ## PLOT SPECIFICATION
   plotOutput(
-    "categorization_plot",
-    height = 300,
+    "naturalness_plot",
+    height = 200,
     # Equivalent to: click = clickOpts(id = "plot_click")
     click = "plot3_click",
     hover = "plot3_hover"
   ),
- 
-  h4("Select subset of data that plots are based on:"),
     
   fluidRow(
-    div( class = "col-xs-4",
+    div(class = "col-xs-3", 
+        pickerInput(
+          "contourGroup",
+          label = h3("Contour"),
+          choices = contourLevels,
+          selected = contourLevels,
+          options = list(`actions-box` = TRUE),
+          multiple = T
+        )),
+    div( class = "col-xs-3",
       pickerInput(
         "itemToggle",
         label = h3("Item"),
@@ -74,8 +80,7 @@ ui <- fluidPage(
         selected = items,
         options = list(`actions-box` = TRUE),
         multiple = T
-      )
-      ), div( class = "col-xs-4",
+      )), div( class = "col-xs-3",
         pickerInput(
           "participantToggle",
           label = h3("Participant"),
@@ -83,7 +88,7 @@ ui <- fluidPage(
           selected = participants,
           options = list(`actions-box` = TRUE),
           multiple = T
-        )), div( class = "col-xs-4",
+        )), div( class = "col-xs-3",
       pickerInput(
         "genderToggle",
         label = h3("Gender"),
@@ -92,44 +97,16 @@ ui <- fluidPage(
         options = list(`actions-box` = TRUE),
         multiple = T
       ))
-  ), 
+    ), 
   
   plotOutput(
     "pitch_plot",
-    height = 200,
+    height = 170,
     # Equivalent to: click = clickOpts(id = "plot_click")
     click = "plot_click",
-    #hover = "plot_hover"
     hover = hoverOpts("plot_hover", delay = 100, delayType = "debounce")
   ),
   uiOutput("hover_info"),
-  
-  h4("Select subset of contours for pitch and naturalness ratings plot:"),
-  
-  ## SELECTIONS FOR Contour for pitch plot and perceptoin plot
-  fluidRow(
-    column(
-      4,
-      pickerInput(
-        "contourGroup",
-        label = h3("Contour"),
-        choices = contourLevels,
-        selected = contourLevels,
-        options = list(`actions-box` = TRUE),
-        multiple = T
-      ))
-  ),
-  
-  h4("Naturalness ratings of each utterance in all three contexts:"),
-  
-  plotOutput(
-    "naturalness_plot",
-    height = 300,
-    # Equivalent to: click = clickOpts(id = "plot_click")
-    click = "plot3_click",
-    hover = "plot3_hover"
-  ),
-  
   
   ## UI ELEMENT FOR AUDIO
   uiOutput("wavfile")
