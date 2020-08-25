@@ -10,7 +10,9 @@ It also contains the code used to generate the webpage with interactive plots us
 
 [http://prosodylab.org/data/bestiary/bestiary-risingcontours/](http://prosodylab.org/data/bestiary/bestiary-risingcontours/)
 
-If you use this data, please cite both the paper and this repository
+There's also a paat annotation  script that can be used to create a  new annotation (one can choose whether one wants to see the condition and/or prior  annotation or  not).
+
+If you use this data or  code from this repository, please cite both the paper and this repository!
 
 
 
