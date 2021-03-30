@@ -12,7 +12,7 @@ It also contains the code used to generate the webpage with interactive plots us
 
 There's also a paat annotation  script that can be used to create a  new annotation (one can choose whether one wants to see the condition and/or prior  annotation or  not).
 
-If you use this data or  code from this repository, please cite both the paper and this repository!
+Description: © 2021 Michael Wagner & Dan Goodhue. This is an open-access OSF project which is distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 International License (see LICENSE file).
 
 
 
